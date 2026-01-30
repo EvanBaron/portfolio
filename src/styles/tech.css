@@ -1,0 +1,11 @@
+.category-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--color-base-05-monolith);
+  margin-bottom: 0.5rem;
+}
+
+.category-group {
+  margin-bottom: 1.5rem;
+}

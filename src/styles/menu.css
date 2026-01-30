@@ -1,0 +1,165 @@
+.nav-absolute {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.menu-btn {
+  width: 48px;
+  height: 48px;
+  padding: 0.5rem;
+  border-radius: 100%;
+  transition: background-color 0.15s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.nav-absolute.nomad .menu-btn {
+  color: var(--color-base-05-nomad);
+}
+
+.nav-absolute.nomad .menu-btn:hover {
+  background-color: var(--color-base-02-nomad);
+}
+
+.nav-absolute.monolith .menu-btn {
+  color: var(--color-base-05-monolith);
+}
+
+.nav-absolute.monolith .menu-btn:hover {
+  background-color: var(--color-base-02-monolith);
+}
+
+.menu-icon {
+  width: 36px;
+  height: 24px;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition:
+    transform 0.3s ease-in-out,
+    background-color 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .menu-overlay {
+    max-width: 100%;
+  }
+}
+
+.menu-overlay.nomad {
+  background-color: var(--color-base-01-nomad);
+}
+
+.menu-overlay.monolith {
+  background-color: var(--color-base-01-monolith);
+}
+
+.menu-overlay.open {
+  transform: translateX(0);
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu-link {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.menu-overlay.nomad .menu-link {
+  color: var(--color-base-05-nomad);
+}
+
+.menu-overlay.monolith .menu-link {
+  color: var(--color-base-05-monolith);
+}
+
+.menu-link:hover {
+  color: var(--color-base-06-nomad);
+}
+
+.menu-overlay.nomad .menu-link:hover {
+  color: var(--color-base-06-nomad);
+}
+
+.menu-overlay.monolith .menu-link:hover {
+  color: var(--color-base-06-monolith);
+}
+
+.close-btn-container {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.close-btn {
+  width: 48px;
+  height: 48px;
+  padding: 0.5rem;
+  border-radius: 100%;
+  transition: background-color 0.15s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.menu-overlay.nomad .close-btn {
+  color: var(--color-base-05-nomad);
+}
+
+.menu-overlay.monolith .close-btn {
+  color: var(--color-base-05-monolith);
+}
+
+.menu-overlay.nomad .close-btn:hover {
+  background-color: var(--color-base-02-nomad);
+}
+
+.menu-overlay.monolith .close-btn:hover {
+  background-color: var(--color-base-02-monolith);
+}
+
+.menu-backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.menu-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}

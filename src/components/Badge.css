@@ -1,0 +1,74 @@
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+  cursor: default;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+}
+
+.badge-icon-monolith {
+  width: 24px;
+  height: 24px;
+}
+
+.badge-icon-nomad {
+  width: 24px;
+  height: 24px;
+  color: var(--color-base-05-nomad);
+}
+
+.badge-text {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .badge-text {
+    font-size: 0.65rem;
+  }
+  
+  .badge-icon-monolith,
+  .badge-icon-nomad {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .badge-nomad,
+  .badge-monolith {
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+.badge-nomad {
+  background-color: var(--color-base-03-nomad);
+  padding: 0.5rem 0.75rem;
+}
+
+.badge-nomad:hover {
+  background-color: var(--color-base-02-nomad);
+}
+
+.badge-nomad .badge-text {
+  color: var(--color-base-05-nomad);
+}
+
+.badge-monolith {
+  background-color: var(--color-base-03-monolith);
+  padding: 0.5rem;
+}
+
+.badge-monolith:hover {
+  background-color: var(--color-base-02-monolith);
+}
+
+.badge-monolith .badge-text {
+  color: var(--color-base-05-monolith);
+}
