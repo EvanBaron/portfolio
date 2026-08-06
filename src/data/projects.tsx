@@ -29,14 +29,14 @@ export const projects: Array<Project> = [
         >
           OutLift Workouts
         </a>{' '}
-        (shown here) is the flagship app of the OutLift ecosystem, built
+        (shown here) is the main app of the OutLift ecosystem, built
         under{' '}
-        <span className={`link-primary-${theme}`}>Baryonic</span>, the
-        company I founded to grow it. It helps users track their workouts,
+        <a href='https://baryonic.fr' className={`link-primary-${theme}`}>Baryonic SAS</a>, the
+        company I created to grow it. It helps users track their workouts,
         build custom training plans, and optimize their programming with an
-        adaptive algorithm — not all features are fully implemented yet.
+        adaptive algorithm, note that all features are not fully implemented yet.
         Alongside it sit two shared libraries (outlift-components,
-        outlift-services) and the live outlift-website; OutLift Coaches is in
+        outlift-services) and the live outlift-website; OutLift for coaches is in
         active development to integrate with Workouts next, with OutLift
         Nutrition and the OutLift Store planned once that foundation is
         solid.
@@ -85,7 +85,7 @@ export const projects: Array<Project> = [
           Winit
         </a>{' '}
         to display the window, everything else is self-made. It's currently
-        paused while I focus on OutLift — a large rewrite is queued to turn
+        paused while I focus on OutLift, a large rewrite is queued to turn
         it from a rigid prototype into an actual rendering engine.
       </>
     ),

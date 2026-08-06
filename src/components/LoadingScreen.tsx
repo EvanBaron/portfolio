@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import '../styles/loading.css'
 
 export default function LoadingScreen() {
-  const [isFinished, setIsFinished] = useState(false)
-  const [isExiting, setIsExiting] = useState(false)
+  const [isFinished, setIsFinished] = useState<boolean>(false)
+  const [isExiting, setIsExiting] = useState<boolean>(false)
 
   useEffect(() => {
     const handleLoad = () => {

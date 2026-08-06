@@ -12,7 +12,7 @@ export default function FadeInSection({
   delay,
   className,
 }: FadeInSectionProps) {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState<boolean>(false)
   const domRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {

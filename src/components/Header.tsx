@@ -4,8 +4,9 @@ import '../styles/menu.css'
 import { useTheme } from '@/context/ThemeContext'
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
   const { theme } = useTheme()
+
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
   const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => setIsOpen(false)

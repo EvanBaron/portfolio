@@ -1,4 +1,5 @@
 import type { Theme } from '@/context/ThemeContext'
+import { ReactNode } from 'react'
 
 export default function SocialLink({
   href,
@@ -6,7 +7,7 @@ export default function SocialLink({
   theme,
 }: {
   href: string
-  icon: React.ReactNode
+  icon: ReactNode
   theme: Theme
 }) {
   return (

@@ -3,14 +3,15 @@ import Badge from './Badge'
 import Illustration from './Illustration'
 import type { BadgeProps } from './Badge'
 import type { Theme } from '@/context/ThemeContext'
+import { ReactNode } from 'react'
 
 type ProjectCardProps = {
   title: string
   imageSrc: string
-  description: (theme: Theme) => React.ReactNode
+  description: (theme: Theme) => ReactNode
   badges: Array<Omit<BadgeProps, 'theme'>>
   theme: Theme
-  meta?: React.ReactNode
+  meta?: ReactNode
   gallery?: Array<string>
   themedIllustration?: boolean
 }
