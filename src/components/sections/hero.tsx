@@ -70,7 +70,7 @@ export default function HeroSection({ theme }: { theme: Theme }) {
       </FadeInSection>
 
       <a
-        href="#tech"
+        href="#projects"
         className={`scroll-cue scroll-cue-${theme}`}
         aria-label="Scroll to skills"
       >

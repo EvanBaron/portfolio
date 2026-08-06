@@ -33,7 +33,7 @@ export default function ExperienceSection({ theme }: { theme: Theme }) {
 
         <div className="experience-content-grid">
           <div className="image-container">
-            <img src="/macif-screen.png" className="image tilt-left" />
+            <img src="/macif-screen.png" className="image" />
           </div>
 
           <div className="experience-details">

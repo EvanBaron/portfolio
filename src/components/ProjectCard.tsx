@@ -40,7 +40,7 @@ export default function ProjectCard({
             color={`var(--color-base-06-${theme})`}
           />
         ) : (
-          <img src={imageSrc} className="image tilt-right" alt={title} />
+          <img src={imageSrc} className="image" alt={title} />
         )}
       </div>
 
