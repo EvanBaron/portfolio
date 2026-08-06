@@ -1,21 +1,19 @@
 import TechCategory from '../TechCategory'
 import FadeInSection from '../FadeInSection'
 import { useSectionTheme } from '@/hooks/useSectionTheme'
-import { SKILLS, TECHNOLOGIES } from '@/data/tech'
+import { SKILLS } from '@/data/tech'
+import type { Theme } from '@/context/ThemeContext'
 
-export default function TechSection() {
-  const ref = useSectionTheme('monolith')
+export default function TechSection({ theme }: { theme: Theme }) {
+  const ref = useSectionTheme(theme)
 
   return (
     <section id="tech" ref={ref}>
       <FadeInSection>
-        <TechCategory title="Skills" categories={SKILLS} theme="monolith" />
-      </FadeInSection>
-      <FadeInSection delay="200ms">
         <TechCategory
-          title="Technologies"
-          categories={TECHNOLOGIES}
-          theme="monolith"
+          title="Skills & Technologies"
+          categories={SKILLS}
+          theme={theme}
         />
       </FadeInSection>
     </section>

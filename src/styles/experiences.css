@@ -44,11 +44,24 @@
   height: 100%;
 }
 
-.experience-separator {
+.decoration-alt-nomad,
+.decoration-alt-monolith,
+.decoration-alt-remnant {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1060/14;
+  margin-top: 1rem;
+}
+
+.decoration-alt-nomad {
   color: var(--color-base-06-nomad);
-  margin-top: 2rem;
+}
+
+.decoration-alt-monolith {
+  color: var(--color-base-06-monolith);
+}
+
+.decoration-alt-remnant {
+  color: var(--color-base-06-remnant);
 }
 
 .title-s-container {
@@ -64,4 +77,16 @@
   width: 1em;
   height: 1em;
   pointer-events: none;
+}
+
+.title-cross-icon-nomad {
+  color: var(--color-base-06-nomad);
+}
+
+.title-cross-icon-monolith {
+  color: var(--color-base-06-monolith);
+}
+
+.title-cross-icon-remnant {
+  color: var(--color-base-06-remnant);
 }

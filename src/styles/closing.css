@@ -1,0 +1,79 @@
+.closing-section {
+  align-items: center;
+}
+
+.closing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.closing-statement {
+  font-size: 1.15rem;
+}
+
+.closing-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.75rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition:
+    background-color 0.25s,
+    transform 0.25s;
+}
+
+.btn-primary-nomad {
+  background-color: var(--color-base-06-nomad);
+  color: var(--color-base-00);
+}
+
+.btn-primary-nomad:hover {
+  background-color: var(--color-base-05-nomad);
+  transform: translateY(-2px);
+}
+
+.btn-primary-monolith {
+  background-color: var(--color-base-06-monolith);
+  color: var(--color-base-00);
+}
+
+.btn-primary-monolith:hover {
+  background-color: var(--color-base-05-monolith);
+  transform: translateY(-2px);
+}
+
+.btn-primary-remnant {
+  background-color: var(--color-base-06-remnant);
+  color: var(--color-base-00);
+}
+
+.btn-primary-remnant:hover {
+  background-color: var(--color-base-05-remnant);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .closing-actions {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

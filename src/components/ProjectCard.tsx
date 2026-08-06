@@ -1,13 +1,18 @@
 import './ProjectCard.css'
 import Badge from './Badge'
+import Illustration from './Illustration'
 import type { BadgeProps } from './Badge'
+import type { Theme } from '@/context/ThemeContext'
 
 type ProjectCardProps = {
   title: string
   imageSrc: string
-  description: React.ReactNode
+  description: (theme: Theme) => React.ReactNode
   badges: Array<Omit<BadgeProps, 'theme'>>
-  theme?: 'nomad' | 'monolith'
+  theme: Theme
+  meta?: React.ReactNode
+  gallery?: Array<string>
+  themedIllustration?: boolean
 }
 
 export default function ProjectCard({
@@ -15,17 +20,40 @@ export default function ProjectCard({
   imageSrc,
   description,
   badges,
-  theme = 'monolith',
+  theme,
+  meta,
+  gallery,
+  themedIllustration,
 }: ProjectCardProps) {
   return (
     <div className="project-card">
-      <h3 className="card-title card-title-monolith">{title}</h3>
+      <h3 className={`card-title card-title-${theme}`}>{title}</h3>
+
+      {meta && <p className={`card-meta card-meta-${theme}`}>{meta}</p>}
 
       <div className="image-container">
-        <img src={imageSrc} className="image" alt={title} />
+        {themedIllustration ? (
+          <Illustration
+            name={imageSrc.replace(/^\//, '').replace(/\.svg$/, '')}
+            className="image themed-illustration"
+            color={`var(--color-base-06-${theme})`}
+          />
+        ) : (
+          <img src={imageSrc} className="image tilt-right" alt={title} />
+        )}
       </div>
 
-      <p className="text-body text-body-monolith">{description}</p>
+      {gallery && gallery.length > 0 && (
+        <div className="project-gallery">
+          {gallery.map((src) => (
+            <div key={src} className="project-gallery-item">
+              <img src={src} alt={`${title} screenshot`} />
+            </div>
+          ))}
+        </div>
+      )}
+
+      <p className={`text-body text-body-${theme}`}>{description(theme)}</p>
 
       <div className="badges-container">
         {badges.map((badge) => (

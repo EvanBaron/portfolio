@@ -1,11 +1,29 @@
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem 3rem;
+  margin-top: 1rem;
+}
+
 .category-title {
   font-family: var(--font-heading);
   font-size: 1rem;
   text-transform: uppercase;
-  color: var(--color-base-05-monolith);
   margin-bottom: 0.5rem;
 }
 
+.category-title-nomad {
+  color: var(--color-base-05-nomad);
+}
+
+.category-title-monolith {
+  color: var(--color-base-05-monolith);
+}
+
+.category-title-remnant {
+  color: var(--color-base-05-remnant);
+}
+
 .category-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }

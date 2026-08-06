@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { useTheme } from '../context/ThemeContext'
+import type { Theme } from '../context/ThemeContext'
 
-export function useSectionTheme(themeName: 'nomad' | 'monolith') {
+export function useSectionTheme(themeName: Theme) {
   const { setTheme } = useTheme()
   const ref = useRef<HTMLElement>(null)
 

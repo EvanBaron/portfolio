@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from 'react'
 import type { ReactNode } from 'react'
 
-type Theme = 'nomad' | 'monolith'
+export type Theme = 'nomad' | 'monolith' | 'remnant'
 
 interface ThemeContextType {
   theme: Theme

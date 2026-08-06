@@ -35,6 +35,14 @@
   background-color: var(--color-base-02-monolith);
 }
 
+.nav-absolute.remnant .menu-btn {
+  color: var(--color-base-05-remnant);
+}
+
+.nav-absolute.remnant .menu-btn:hover {
+  background-color: var(--color-base-02-remnant);
+}
+
 .menu-icon {
   width: 36px;
   height: 24px;
@@ -72,6 +80,10 @@
   background-color: var(--color-base-01-monolith);
 }
 
+.menu-overlay.remnant {
+  background-color: var(--color-base-01-remnant);
+}
+
 .menu-overlay.open {
   transform: translateX(0);
 }
@@ -97,8 +109,8 @@
   color: var(--color-base-05-monolith);
 }
 
-.menu-link:hover {
-  color: var(--color-base-06-nomad);
+.menu-overlay.remnant .menu-link {
+  color: var(--color-base-05-remnant);
 }
 
 .menu-overlay.nomad .menu-link:hover {
@@ -107,6 +119,10 @@
 
 .menu-overlay.monolith .menu-link:hover {
   color: var(--color-base-06-monolith);
+}
+
+.menu-overlay.remnant .menu-link:hover {
+  color: var(--color-base-06-remnant);
 }
 
 .close-btn-container {
@@ -140,12 +156,20 @@
   color: var(--color-base-05-monolith);
 }
 
+.menu-overlay.remnant .close-btn {
+  color: var(--color-base-05-remnant);
+}
+
 .menu-overlay.nomad .close-btn:hover {
   background-color: var(--color-base-02-nomad);
 }
 
 .menu-overlay.monolith .close-btn:hover {
   background-color: var(--color-base-02-monolith);
+}
+
+.menu-overlay.remnant .close-btn:hover {
+  background-color: var(--color-base-02-remnant);
 }
 
 .menu-backdrop {

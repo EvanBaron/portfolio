@@ -7,6 +7,7 @@
 @import './styles/tech.css';
 @import './styles/experiences.css';
 @import './styles/projects.css';
+@import './styles/grain.css';
 
 html {
   scroll-behavior: smooth;
@@ -19,16 +20,22 @@ html {
   --color-base-00: #1a1a1a;
   --color-base-01-nomad: #2c3132;
   --color-base-01-monolith: #2c3132;
+  --color-base-01-remnant: #302e2e;
   --color-base-02-nomad: #394546;
   --color-base-02-monolith: #464539;
+  --color-base-02-remnant: #463939;
   --color-base-03-nomad: #607e82;
   --color-base-03-monolith: #7a8260;
+  --color-base-03-remnant: #826060;
   --color-base-04-nomad: #889396;
   --color-base-04-monolith: #929688;
+  --color-base-04-remnant: #968888;
   --color-base-05-nomad: #c7d6db;
   --color-base-05-monolith: #d7dbc7;
+  --color-base-05-remnant: #dbc7c7;
   --color-base-06-nomad: #02a7a8;
   --color-base-06-monolith: #a19d17;
+  --color-base-06-remnant: #a80202;
   --color-base-07: #fdfdfd;
   --color-base-08: #cc241d;
   --color-base-09: #fe8019;

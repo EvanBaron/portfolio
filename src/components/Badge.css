@@ -24,6 +24,12 @@
   color: var(--color-base-05-nomad);
 }
 
+.badge-icon-remnant {
+  width: 24px;
+  height: 24px;
+  color: var(--color-base-05-remnant);
+}
+
 .badge-text {
   font-family: var(--font-heading);
   font-size: 0.75rem;
@@ -36,13 +42,15 @@
   }
   
   .badge-icon-monolith,
-  .badge-icon-nomad {
+  .badge-icon-nomad,
+  .badge-icon-remnant {
     width: 20px;
     height: 20px;
   }
-  
+
   .badge-nomad,
-  .badge-monolith {
+  .badge-monolith,
+  .badge-remnant {
     padding: 0.4rem 0.6rem;
   }
 }
@@ -71,4 +79,17 @@
 
 .badge-monolith .badge-text {
   color: var(--color-base-05-monolith);
+}
+
+.badge-remnant {
+  background-color: var(--color-base-03-remnant);
+  padding: 0.5rem 0.75rem;
+}
+
+.badge-remnant:hover {
+  background-color: var(--color-base-02-remnant);
+}
+
+.badge-remnant .badge-text {
+  color: var(--color-base-05-remnant);
 }

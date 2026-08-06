@@ -5,6 +5,7 @@ import {
   Scripts,
   createRootRoute,
 } from '@tanstack/react-router'
+import GrainOverlay from '../components/GrainOverlay'
 import Header from '../components/Header'
 import LoadingScreen from '../components/LoadingScreen'
 import { ThemeProvider } from '@/context/ThemeContext'
@@ -70,6 +71,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <LoadingScreen />
+        <GrainOverlay />
         <ThemeProvider>
           <Header />
           {children}

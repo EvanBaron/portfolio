@@ -1,10 +1,11 @@
 import Illustration from './Illustration'
 import './Badge.css'
+import type { Theme } from '@/context/ThemeContext'
 
 export type BadgeProps = {
   name: string
   label: string
-  theme: 'nomad' | 'monolith'
+  theme: Theme
 }
 
 export default function Badge({ name, label, theme }: BadgeProps) {

@@ -10,35 +10,27 @@ export type Category = {
 
 export const SKILLS: Array<Category> = [
   {
-    title: 'Web',
+    title: 'Languages',
     items: [
       { name: 'javascript', label: 'Javascript' },
       { name: 'typescript', label: 'Typescript' },
-    ],
-  },
-  {
-    title: 'Backend',
-    items: [
-      { name: 'sql', label: 'SQL' },
-      { name: 'postgresql', label: 'Postgresql' },
-    ],
-  },
-  {
-    title: 'Other',
-    items: [
       { name: 'rust', label: 'Rust' },
       { name: 'c', label: 'C Language' },
       { name: 'python', label: 'Python' },
     ],
   },
-]
-
-export const TECHNOLOGIES: Array<Category> = [
   {
-    title: 'Web',
+    title: 'Frontend & Mobile',
     items: [
       { name: 'react', label: 'React' },
       { name: 'expo', label: 'Expo' },
+    ],
+  },
+  {
+    title: 'Backend & Data',
+    items: [
+      { name: 'sql', label: 'SQL' },
+      { name: 'postgresql', label: 'Postgresql' },
       { name: 'supabase', label: 'Supabase' },
     ],
   },
@@ -47,7 +39,15 @@ export const TECHNOLOGIES: Array<Category> = [
     items: [{ name: 'vulkan', label: 'Vulkan' }],
   },
   {
-    title: 'Design',
-    items: [{ name: 'figma', label: 'Figma' }],
+    title: 'Product & Infra',
+    items: [
+      { name: 'figma', label: 'Figma' },
+      { name: 'cloudflare', label: 'Cloudflare' },
+      { name: 'stripe', label: 'Stripe' },
+      { name: 'revenuecat', label: 'RevenueCat' },
+      { name: 'appstore', label: 'App Store Connect' },
+      { name: 'googleplay', label: 'Google Play Console' },
+      { name: 'googlecloud', label: 'Google Cloud Console' },
+    ],
   },
 ]

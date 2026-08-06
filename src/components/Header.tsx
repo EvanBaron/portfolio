@@ -34,17 +34,20 @@ export default function Header() {
           <a href="#hero" className="menu-link" onClick={closeMenu}>
             Home
           </a>
-          <a href="#tech" className="menu-link" onClick={closeMenu}>
-            Skills & Tech
+          <a href="#projects" className="menu-link" onClick={closeMenu}>
+            Projects
           </a>
           <a href="#experiences" className="menu-link" onClick={closeMenu}>
             Experiences
           </a>
-          <a href="#projects" className="menu-link" onClick={closeMenu}>
-            Projects
+          <a href="#tech" className="menu-link" onClick={closeMenu}>
+            Skills & Tech
           </a>
           <a href="#about" className="menu-link" onClick={closeMenu}>
             About Me
+          </a>
+          <a href="#closing" className="menu-link" onClick={closeMenu}>
+            Contact
           </a>
         </nav>
       </aside>
