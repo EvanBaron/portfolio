@@ -22,7 +22,7 @@ export default function AboutSection({ theme }: { theme: Theme }) {
         <FadeInSection delay="200ms" className="about-top-row">
           <div className="profile-container">
             <img
-              src="/profile.png"
+              src="/profile.jpg"
               className={`profile-image profile-image-${theme}`}
             />
           </div>

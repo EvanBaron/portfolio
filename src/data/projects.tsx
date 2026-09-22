@@ -19,7 +19,7 @@ export type Project = {
 export const projects: Array<Project> = [
   {
     title: 'OutLift Workouts',
-    imageSrc: '/outlift.png',
+    imageSrc: '/outlift.jpg',
     meta: 'Founder & CEO, Baryonic · Building the OutLift ecosystem since Summer 2025',
     description: (theme) => (
       <>
