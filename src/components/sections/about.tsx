@@ -1,8 +1,8 @@
-import Illustration from '../Illustration'
+import type { Theme } from '@/context/ThemeContext'
+import { useSectionTheme } from '@/hooks/useSectionTheme'
 import '../../styles/about.css'
 import FadeInSection from '../FadeInSection'
-import { useSectionTheme } from '@/hooks/useSectionTheme'
-import type { Theme } from '@/context/ThemeContext'
+import Illustration from '../Illustration'
 
 export default function AboutSection({ theme }: { theme: Theme }) {
   const ref = useSectionTheme(theme)
@@ -11,9 +11,7 @@ export default function AboutSection({ theme }: { theme: Theme }) {
     <section id="about" ref={ref}>
       <FadeInSection>
         <div className="section-title-wrapper">
-          <h2 className={`section-title section-title-${theme}`}>
-            About Me
-          </h2>
+          <h2 className={`section-title section-title-${theme}`}>About Me</h2>
           <Illustration name="decoration" className={`decoration-${theme}`} />
         </div>
       </FadeInSection>
@@ -60,10 +58,10 @@ export default function AboutSection({ theme }: { theme: Theme }) {
             obsession with tracking and improving performance was what led me to
             create{' '}
             <a
-              href="https://outlift.app"
+              href="https://Outlift.app"
               className={`link-primary link-primary-${theme}`}
             >
-              OutLift
+              Outlift
             </a>
             , it is the bridge between my love for fitness and my skills in
             development.

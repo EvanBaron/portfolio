@@ -1,10 +1,10 @@
+import type { Theme } from '@/context/ThemeContext'
+import { useSectionTheme } from '@/hooks/useSectionTheme'
 import { Download } from 'lucide-react'
+import '../../styles/closing.css'
+import FadeInSection from '../FadeInSection'
 import Illustration from '../Illustration'
 import SocialLink from '../SocialLink'
-import FadeInSection from '../FadeInSection'
-import '../../styles/closing.css'
-import { useSectionTheme } from '@/hooks/useSectionTheme'
-import type { Theme } from '@/context/ThemeContext'
 
 export default function ClosingSection({ theme }: { theme: Theme }) {
   const ref = useSectionTheme(theme)
@@ -13,9 +13,7 @@ export default function ClosingSection({ theme }: { theme: Theme }) {
     <section id="closing" className="section-full closing-section" ref={ref}>
       <FadeInSection>
         <div className="section-title-wrapper">
-          <h2 className={`section-title section-title-${theme}`}>
-            Let's Talk
-          </h2>
+          <h2 className={`section-title section-title-${theme}`}>Let's Talk</h2>
           <Illustration name="decoration" className={`decoration-${theme}`} />
         </div>
       </FadeInSection>
@@ -23,10 +21,10 @@ export default function ClosingSection({ theme }: { theme: Theme }) {
       <div className="closing-content">
         <FadeInSection delay="200ms">
           <p className={`text-body text-body-${theme} closing-statement`}>
-            Currently building OutLift, always studying something new, and
-            genuinely happy to talk shop — reach out if you want to
-            collaborate, have a role in mind, or just want to chat about AI,
-            fitness, or rendering engines.
+            Currently building Outlift and always studying something new,
+            genuinely happy to talk, you can reach out if you want to
+            collaborate, have a role in mind, or just want to learn more about
+            Outlift, chat about fitness, or rendering engines.
           </p>
         </FadeInSection>
 
