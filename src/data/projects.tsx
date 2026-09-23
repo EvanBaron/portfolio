@@ -19,7 +19,7 @@ export type Project = {
 export const projects: Array<Project> = [
   {
     title: 'Outlift Workouts',
-    imageSrc: '/Outlift.jpg',
+    imageSrc: '/outlift.jpg',
     meta: 'Founder & CEO, Baryonic · Building the Outlift ecosystem since Summer 2025',
     description: (theme) => (
       <>
@@ -50,11 +50,11 @@ export const projects: Array<Project> = [
       { name: 'supabase', label: 'Supabase' },
     ],
     gallery: [
-      '/Outlift-mobile-1.png',
-      '/Outlift-mobile-2.png',
-      '/Outlift-mobile-3.png',
-      '/Outlift-mobile-4.png',
-      '/Outlift-mobile-5.png',
+      '/outlift-mobile-1.png',
+      '/outlift-mobile-2.png',
+      '/outlift-mobile-3.png',
+      '/outlift-mobile-4.png',
+      '/outlift-mobile-5.png',
     ],
   },
   {
